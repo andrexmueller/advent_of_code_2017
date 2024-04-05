@@ -1,6 +1,6 @@
 /*
     Advent of Code - 2017
-    Day 4: Day 5: A Maze of Twisty Trampolines, All Alike
+    Day 5: A Maze of Twisty Trampolines, All Alike
 
 */
 
@@ -14,7 +14,7 @@ int solve_problem(std::vector<int> maze, int part) {
 
     int steps = 0;
     int actual = 0;
-    int next = actual + maze[actual];
+    size_t next = actual + maze[actual];
     
     while (next < maze.size() && next >= 0) {
         if (part == 1) 
@@ -34,10 +34,10 @@ int solve_problem(std::vector<int> maze, int part) {
 }
 
 
-int main(int argc, char **argv) {
+int main() {
 
     std::vector<int> maze{};
-    int jmp{};
+    int jmp{0};
 
     while (std::cin >> jmp) {
         maze.push_back(jmp);
