@@ -1,4 +1,6 @@
 *.txt
 *.exe
 *.o
+*.py
 .\vscode
+.\vs
